@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the compiled CSS file -->
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/b1.gif" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p>Biomedical Researcher</p>
+                <h1> Hi, I'm <span>Bell</span><br> from Boobieland.</h1>
+            </div>
+        </div>
+    </div>
+<!--------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "images/b1.gif">
+            </div>
+            <div class = "about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>bello bello</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="showTab(0)">Skills</p>
+                    <p class="tab-links" onclick="showTab(1)">Experience</p>
+                    <p class="tab-links" onclick="showTab(2)">Education</p>
+                </div>
+                <div class = 'tab-contents active-tab'>
+                    <ul>
+                        <li><span>Biomedical device</span><br>Using C.elegans</li>
+                        <li><span>Biomedical device</span><br>Using Bioluminescent</li>
+                        <li><span>Biomedical device</span><br>Using lectin microarray</li>
+                    </ul>
+                </div>
+                <div class = 'tab-contents'>
+                    <ul>
+                        <li><span>2022-current</span><br>HBS</li>
+                        <li><span>2021-2022</span><br>MOON</li>
+                        <li><span>2021-2021</span><br>AIST</li>
+                    </ul>
+                </div>
+                <div class = 'tab-contents'>
+                    <ul>
+                        <li><span>2018-2021</span><br>TU</li>
+                        <li><span>2015-2017</span><br>OU</li>
+                        <li><span>2014-2017</span><br>KMUTT</li>
+                        <li><span>2010-2014</span><br>KMUTT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showTab(index) {
+      const tabContents = document.querySelectorAll('.tab-contents');
+
+      // Hide all tab contents
+      tabContents.forEach((content) => (content.style.display = 'none'));
+
+      // Remove active-link class from all links
+      const tabLinks = document.querySelectorAll('.tab-links');
+      tabLinks.forEach((tabLink) => tabLink.classList.remove('active-link'));
+
+      // Show the selected tab content
+      tabContents[index].style.display = 'block';
+
+      // Add the active-link class to the clicked link
+      tabLinks[index].classList.add('active-link');
+    }
+  </script>
+</body>
+</html>
