@@ -1,0 +1,3 @@
+[submodule "maiimao"]
+	path = maiimao
+	url = https://github.com/Bellzum/maiimao.git
