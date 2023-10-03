@@ -15,16 +15,19 @@
         <div class="container">
             <nav>
                 <img src="000.gif" class="logo">
-                <ul>
+                <ul id ="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Activities</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class = "header-text">
-                <p>Biomedical Researcher</p>
-                <h1> Hi, I'm <span>Bell</span><br> from Boobieland.</h1>
+                <p>Research scientist</p>
+                <h1> Hi, I'm <span>Bell</span><br> This is my Portfolio.</h1>
             </div>
         </div>
     </div>
@@ -106,42 +109,107 @@
                 <p>R&D study: Implemented PhD research project, isolated novel bacteria from bio-compost through a roll tube technique. 
                     Designed strategies using metagenomes, a whole genome sequencing, phenotypes, and an enzymatic activity, to identify the novel bacteria characterization, and their symbiotic relationship in chitin degradation.(Published articles)</br>
                     Technical writing: authored and revised SOPs, and published research articles</p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-flask"></i>
                 <h2>Characterization and comparative genome analysis of two strains of thermophilic, anaerobic, cellulolytic-xylanolytic bacterium <i>Herbivorax saccincola</i> </h2>
                 <p>R&D study: Analyzed and interpreted bacterial genomes using a whole genome sequencing.(Published an article)</p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-flask"></i>
                 <h2>The development of glucose production from lignocellulose in rice straw using <i>Clostridium thermocellum</i> with a thermostable &Beta;-glucosidase as supplement for large-scale production </h2>
                 <p>R&D study: Studied on the thermostable enzyme using a recombinant protein expression in <i>E.coli</i>, protein purification and an evaluation of enzymatic activities.
                 </p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-flask"></i>
                 <h2>Topic: Determination of Cell Passage and Cryopreservation Process based on Time Consideration in Cell Manufacturability of Human Mesenchymal Stem Cells </h2>
                 <p>R&D study: Pioneered a set of performance indices to quantify the cell abilities. Validated cell apoptosis and undifferentiated cells on surface markers using a flow cytometer. (Published an article and a proceeding)</p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-flask"></i>
                 <h2>Effect of Suspension Time on Human Chondrocyte Cells</h2>
                 <p>R&D study: Evaluated the quality of human primary chondrocyte cells using the set of performance indices for an automated cell culture system.</p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-flask"></i>
                 <h2>Characterization of Hyaluronic acid hydrogel as a cell sheet delivery vehicle</h2>
                 <p>R&D study: Designed the SOPs and pioneered a construction of thermo-responsive hydrogel and optimized the hydrogel stability.</p>
-                    <a href="#">Learn More</a>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </div>
 </div>
+<!----------------Activities---------------->
+<div id="Activities">
+    <div class="container"></div>
+        <h1 class = "sub-title">Activities</h1>
+        <div class ="Activity-list">
+            <div class = "Uni">
+                <img src = "images/1.png">
+                <div class="layer">
+                    <h3>Undergrad</h3>
+                    <p>IJC club was the English club.</p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class = "Uni">
+                <img src = "images/2.jpg">
+                <div class="layer">
+                    <h3>Post-grad</h3>
+                    <p>I did nothing.</p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class = "Uni">
+                <img src = "images/3.jpg">
+                <div class="layer">
+                    <h3>After grad</h3>
+                    <p>CAIC is a cellular agriculture organisation in Japan.</p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------Contact---------------->
+<div id="contact">
+    <div class = "container">
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Umbhorn.ung@gmail.com</p>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/in/umbhorn-ungkulpasvich"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://orcid.org/0000-0002-9735-3798"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.researchgate.net/profile/Umbhorn-Ungkulpasvich"><i class="fab fa-researchgate"></i></a>
+                </div>
+                <a href="images/CV_UU.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class = "contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name ="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type = "sumbit" class="btn btn2">Sumbit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by Bellzum</p>
+    </div>
+
+</div>
+
+
+
 <script>
     function showTab(index) {
       const tabContents = document.querySelectorAll('.tab-contents');
@@ -162,3 +230,14 @@
   </script>
 </body>
 </html>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
