@@ -401,3 +401,8 @@ nav.fa-solid{
     font-size: 14px;
   }
 }
+#msg{
+  color: #b54769;
+  margin-top: -40px;
+  display: block;
+}
