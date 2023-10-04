@@ -58,7 +58,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #A9C4DD;
   position: absolute;
   left: 50%;
   bottom: -6px;
@@ -68,19 +68,19 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
   height: 3px;
-  background: #ff004f;
+  background: #A9C4DD;
   position: absolute;
   left: 0;
   bottom: -6px;
 }
 
 .header-text{
-  margin-top:20%;
+  margin-top:10%;
   font-size: 30px;
 }
 
 .header-text h1{
-  font-size: 60px;
+  font-size: 50px;
   margin-top: 20px;
 }
 
@@ -133,13 +133,13 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
-  text-align:center;
+  
 }
 .tab-links::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #A9C4DD;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -154,8 +154,8 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span{
-  color: #b54769;
-  font-size: 14px;
+  color: #588ec0;
+  font-size: 16px;
 }
 .tab-contents{
   display: none;
@@ -174,7 +174,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .Research-list div{
-  background: #EDC7BB;
+  background: #C7E9FF;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -199,7 +199,7 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 .Research-list div:hover{
-  background: #b54769;
+  background: #D1F5F5;
   transform: translateY(-10px);
 }
 /*------------------------ Activities-----------------------------*/
@@ -338,7 +338,7 @@ form .btn2{
   padding: 25px 0;
   background: #EDC7BB;
   font-weight: 300;
-  margin-top:2 0px;
+  margin-top: 20px;
 }
 .copyright i{
   color: #ecb96e;
@@ -356,7 +356,7 @@ nav.fa-solid{
   }
   .header-text{
     margin-top: 10%; /* Adjust the margin top */
-    padding-top: 60%; /* Adjust the padding top to position the text */
+    padding-top: 25%; /* Adjust the padding top to position the text */
     font-size: 16px;
     text-align: center;
   }
